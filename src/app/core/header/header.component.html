@@ -1,5 +1,11 @@
 <div class="headerContainer">
-  <h1>KAKAOS COLLECTIVE</h1>
+  <h1 [style.top]="HeaderTop" [style.opacity]="HeaderOpacity">
+    KAKAOS COLLECTIVE
+  </h1>
+  <img
+    src="scrollAnimation.gif"
+    style="position: absolute; top: 78%; z-index: 1"
+  />
   <img
     class="banner"
     src="banner.png"
@@ -7,3 +13,5 @@
     [style.filter]="BrightnessFilter"
   />
 </div>
+<!-- just a filler for testing purposes -->
+<div style="height: 100vh"></div>

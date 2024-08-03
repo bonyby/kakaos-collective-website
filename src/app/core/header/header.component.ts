@@ -8,36 +8,21 @@ import { Component, HostListener } from '@angular/core';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  CurrentBrightness = 100;
-  BrightnessFilter = `brightness(${this.CurrentBrightness}%)`;
-  private intervalId: any;
-  private currentYScroll = 0;
+  private startBrightness = 35;
+  BrightnessFilter = `brightness(${this.startBrightness}%)`;
+  HeaderTop = '50%';
+  HeaderOpacity = 1;
 
-  @HostListener('window:wheel', ['$event.deltaY'])
-  onScroll(deltaY: number) {
-    clearInterval(this.intervalId);
-    let min = 0;
-    let max = this.getMaxScrollHeight();
-    this.currentYScroll = Math.min(
-      Math.max(this.currentYScroll + Math.round(deltaY), min),
-      max
-    );
-    let t = 1 - this.currentYScroll / max;
-    let brightness = 25 + (100 - 25) * t;
-    let currentStep = 0;
-    let steps = 10;
-    const startValue = this.CurrentBrightness;
-    const stepIncrement = (brightness - startValue) / steps;
-    this.intervalId = setInterval(() => {
-      this.CurrentBrightness = startValue + stepIncrement * currentStep;
-      this.BrightnessFilter = `brightness(${this.CurrentBrightness}%)`;
-      // Stop the interval when the final value is reached
-      if (currentStep >= steps) {
-        clearInterval(this.intervalId);
-      }
-      currentStep++;
-      console.log(this.BrightnessFilter);
-    }, 5);
+  @HostListener('window:scroll')
+  onScroll() {
+    let max = document.documentElement.clientHeight / 2;
+    let t = window.scrollY / max;
+    let brightness = 10 + (this.startBrightness - 10) * (1 - t);
+    let headerTop = 50 + (75 - 50) * t;
+    let headerOpacity = 1 + (0.6 - 1) * t;
+    this.BrightnessFilter = `brightness(${brightness}%)`;
+    this.HeaderTop = `${headerTop}%`;
+    this.HeaderOpacity = headerOpacity;
   }
 
   getMaxScrollHeight(): number {

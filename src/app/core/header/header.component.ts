@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import NumberInterpolator from '../../shared/math/numberInterpolator';
 
 @Component({
   selector: 'app-header',
@@ -9,25 +10,37 @@ import { Component, HostListener } from '@angular/core';
 })
 export class HeaderComponent {
   private startBrightness = 35;
+  private endBrightness = 10;
   BrightnessFilter = `brightness(${this.startBrightness}%)`;
-  HeaderTop = '50%';
+
+  private startTop = 50;
+  private endTop = 75;
+  HeaderTop = `${this.startTop}%`;
+
+  private startOpacity = 1;
+  private endOpacity = 0.6;
   HeaderOpacity = 1;
 
   @HostListener('window:scroll')
   onScroll() {
-    let max = document.documentElement.clientHeight / 2;
-    let t = window.scrollY / max;
-    let brightness = 10 + (this.startBrightness - 10) * (1 - t);
-    let headerTop = 50 + (75 - 50) * t;
-    let headerOpacity = 1 + (0.6 - 1) * t;
-    this.BrightnessFilter = `brightness(${brightness}%)`;
-    this.HeaderTop = `${headerTop}%`;
-    this.HeaderOpacity = headerOpacity;
-  }
+    let maxScroll = document.documentElement.clientHeight / 2;
+    let t = window.scrollY / maxScroll;
 
-  getMaxScrollHeight(): number {
-    const scrollHeight = document.documentElement.scrollHeight;
-    const clientHeight = document.documentElement.clientHeight;
-    return scrollHeight - clientHeight;
+    let brightness = NumberInterpolator.GetValue(
+      this.startBrightness,
+      this.endBrightness,
+      t
+    );
+    this.BrightnessFilter = `brightness(${brightness}%)`;
+
+    let headerTop = NumberInterpolator.GetValue(this.startTop, this.endTop, t);
+    this.HeaderTop = `${headerTop}%`;
+
+    let headerOpacity = NumberInterpolator.GetValue(
+      this.startOpacity,
+      this.endOpacity,
+      t
+    );
+    this.HeaderOpacity = headerOpacity;
   }
 }

@@ -29,7 +29,7 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%); 
     text-align: center;
-    color: #ffbf65;
+    color: var(--text-color);
     z-index: 2;
     margin: 0;
     letter-spacing: 0.20em;

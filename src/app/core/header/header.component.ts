@@ -1,5 +1,5 @@
 import { Component, HostListener } from '@angular/core';
-import NumberInterpolator from '../../shared/math/numberInterpolator';
+import NumberInterpolator from '../../shared/math/number-interpolator';
 
 @Component({
   selector: 'app-header',

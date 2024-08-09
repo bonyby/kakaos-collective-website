@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap");
+
 :root {
   --text-color: #f9e4d4;
   --background-color: #470d21;
@@ -11,6 +13,23 @@ body {
   background-color: var(--background-color);
 }
 
-h1 {
+p {
   font-family: "Inter", sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.content-block {
+  width: 100%;
+  max-width: 750px;
+  border-style: solid;
+  border-color: var(--secondary-color);
+  border-width: 3px;
+  border-radius: 1.5rem;
+  margin: 1.5rem;
+}
+
+.content-block p {
+  margin: 1.5rem;
 }

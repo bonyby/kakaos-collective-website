@@ -22,7 +22,7 @@ p {
 
 .content-block {
   width: 100%;
-  max-width: 650px;
+  max-width: 600px;
   border-style: solid;
   border-color: var(--secondary-color);
   border-width: 2px;
@@ -32,4 +32,10 @@ p {
 
 .content-block p {
   margin: 1.5rem;
+}
+
+.slider-content-container {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 100%;
 }

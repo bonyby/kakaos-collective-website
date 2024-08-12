@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ContentBlockBaseComponent } from '../content-block-base/content-block-base.component';
 
 @Component({
   selector: 'app-info-content-block',
@@ -6,8 +7,7 @@ import { Component, Input } from '@angular/core';
   imports: [],
   templateUrl: './info-content-block.component.html',
   styleUrl: './info-content-block.component.scss',
-  host: { class: 'content-block' },
 })
-export class InfoContentBlockComponent {
+export class InfoContentBlockComponent extends ContentBlockBaseComponent {
   @Input() Text: string = 'Text';
 }

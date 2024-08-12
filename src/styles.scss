@@ -3,8 +3,8 @@
 :root {
   --text-color: #f9e4d4;
   --background-color: #470d21;
-  --primary-color: #d67d3e;
-  --secondary-color: #9c0f48;
+  --primary-color: #9c0f48;
+  --secondary-color: #d67d3e;
   --accent-color: #508d4e;
 }
 
@@ -24,7 +24,7 @@ p {
   width: 100%;
   max-width: 600px;
   border-style: solid;
-  border-color: var(--secondary-color);
+  border-color: var(--primary-color);
   border-width: 2px;
   border-radius: 1.5rem;
   margin: 1.5rem;

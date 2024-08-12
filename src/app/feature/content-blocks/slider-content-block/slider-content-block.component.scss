@@ -1,4 +1,43 @@
+.content-block:host {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
 .slider {
+  width: 100%;
   display: grid;
-  //   overflow: hidden;
+}
+
+.slider-button {
+  display: flex;
+  position: absolute;
+  width: 3rem;
+  aspect-ratio: 1/1;
+  justify-content: center;
+  align-items: center;
+  mask-image: url("/assets/arrow-01.svg");
+  z-index: 100;
+  transition: background-color 0.2s ease-out;
+}
+
+.left-button {
+  left: 0;
+  transform: rotate(180deg);
+  background-color: var(--left-button-color, var(--primary-color));
+}
+
+.left-button:hover {
+  background-color: var(--left-button-hover-color, var(--secondary-color));
+}
+
+.right-button {
+  background-color: var(--right-button-color, var(--primary-color));
+  right: 0;
+}
+
+.right-button:hover {
+  background-color: var(--right-button-hover-color, var(--secondary-color));
 }

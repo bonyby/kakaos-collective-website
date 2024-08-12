@@ -1,7 +1,5 @@
-<div class="slider content-block">
+<div class="slider-button left-button" (click)="previous()"></div>
+<div class="slider">
   <ng-content></ng-content>
-  <div
-    style="width: 50px; height: 50px; background-color: black"
-    (click)="clicked()"
-  ></div>
 </div>
+<div class="slider-button right-button" (click)="next()"></div>

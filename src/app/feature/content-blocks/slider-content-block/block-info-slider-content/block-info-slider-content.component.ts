@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SliderContentBaseComponent } from '../slider-content-base/slider-content-base.component';
 
 @Component({
@@ -14,4 +14,11 @@ import { SliderContentBaseComponent } from '../slider-content-base/slider-conten
     },
   ],
 })
-export class BlockInfoSliderContentComponent extends SliderContentBaseComponent {}
+export class BlockInfoSliderContentComponent extends SliderContentBaseComponent {
+  @Input() BlockName: string = '';
+  @Input() ImageName: string = '';
+
+  get ImageUrl() {
+    return `assets/blocks/${this.ImageName}`;
+  }
+}

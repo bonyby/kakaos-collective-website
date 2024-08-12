@@ -4,12 +4,13 @@
   padding: 0;
   height: 3rem;
   margin-top: 2rem;
+  --title-container-color: var(--primary-color);
 }
 
 .heading-end {
   height: 100%;
   aspect-ratio: 1/1;
-  background-color: var(--secondary-color);
+  background-color: var(--title-container-color);
   mask-image: url("/assets/heading-end.svg");
 }
 
@@ -20,7 +21,7 @@
 .title-container {
   display: flex;
   align-items: center;
-  background-color: var(--secondary-color);
+  background-color: var(--title-container-color);
   height: 100%;
   padding: 0 5rem 0 5rem;
 }

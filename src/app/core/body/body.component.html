@@ -19,7 +19,36 @@
     Url="https://kakaos-collective.itch.io/breakout-season"
   ></app-cta-button>
 
+  <app-media-content-block
+    Title="Embrace chaotic satisfaction!"
+    Src="assets/gifs/gameplay-01.gif"
+    Alt="A .gif showing gameplay of Breakout Season"
+  ></app-media-content-block>
+
   <app-slider-content-block
+    class="rounded"
+    Title="Experience different seasons!"
+  >
+    <app-image-slider-content
+      Src="assets/gameplay-spring.png"
+      Alt="Gameplay screenshot showcasing spring"
+    ></app-image-slider-content>
+    <app-image-slider-content
+      Src="assets/gameplay-summer.png"
+      Alt="Gameplay screenshot showcasing summer"
+    ></app-image-slider-content>
+    <app-image-slider-content
+      Src="assets/gameplay-autumn.png"
+      Alt="Gameplay screenshot showcasing autumn"
+    ></app-image-slider-content>
+    <app-image-slider-content
+      Src="assets/gameplay-winter.png"
+      Alt="Gameplay screenshot showcasing winter"
+    ></app-image-slider-content>
+  </app-slider-content-block>
+
+  <app-slider-content-block
+    class="bordered rounded"
     Title="Meet the blocks!"
     [style.--right-button-color]="'var(--background-color)'"
   >

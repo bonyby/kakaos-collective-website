@@ -14,7 +14,6 @@ import { SliderContentBaseComponent } from './slider-content-base/slider-content
   imports: [],
   templateUrl: './slider-content-block.component.html',
   styleUrl: './slider-content-block.component.scss',
-  host: { class: 'bordered' },
 })
 export class SliderContentBlockComponent
   extends ContentBlockBaseComponent

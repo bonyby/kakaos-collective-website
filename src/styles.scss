@@ -41,11 +41,12 @@ a {
 }
 
 .content-title {
-  font-weight: 200;
-  font-size: 1.6rem;
+  font-weight: 300;
+  font-size: 1.2rem;
   background-color: var(--primary-color);
   margin: 0 !important;
-  padding: 0.5rem 0rem 0.5rem 1rem;
+  padding: 0.25rem 0rem 0.25rem 1rem;
+  color: var(--text-color);
 }
 
 .slider-content-container {
@@ -58,5 +59,8 @@ a {
   border-style: solid;
   border-color: var(--primary-color);
   border-width: 2px;
+}
+
+.rounded {
   border-radius: 1.5rem;
 }

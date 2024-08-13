@@ -1,0 +1,23 @@
+:root {
+  --wiggle-animation: wiggle 1.3s infinite linear;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(calc(var(--neutral-rotation))) scaleY(1) scaleX(1);
+  }
+  25% {
+    transform: rotate(calc(var(--neutral-rotation) + var(--max-rotation)))
+      scaleY(var(--max-y-scale)) scaleX(var(--min-x-scale));
+  }
+  50% {
+    transform: rotate(calc(var(--neutral-rotation))) scaleY(1) scaleX(1);
+  }
+  75% {
+    transform: rotate(calc(var(--neutral-rotation) - var(--max-rotation)))
+      scaleY(var(--max-y-scale)) scaleX(var(--min-x-scale));
+  }
+  100% {
+    transform: rotate(calc(var(--neutral-rotation))) scaleY(1) scaleX(1);
+  }
+}

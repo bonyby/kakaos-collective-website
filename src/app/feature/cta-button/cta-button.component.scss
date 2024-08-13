@@ -1,0 +1,23 @@
+.cta-button {
+  display: block;
+  background-color: var(--accent-color-1);
+  font-size: 1.5rem;
+  color: var(--text-color);
+  padding: 1rem 2rem;
+  margin: 1.5rem 0;
+  border-radius: 0.8rem;
+  filter: var(--drop-shadow);
+  font-weight: 300;
+  text-align: center;
+  text-underline-offset: 0.15rem;
+  --max-y-scale: 1.01;
+  --min-x-scale: 0.99;
+  --neutral-rotation: 0deg;
+  --max-rotation: 0.5deg;
+  animation: var(--wiggle-animation);
+}
+
+.cta-button:hover {
+  background-color: var(--accent-color-2);
+  color: var(--background-color);
+}

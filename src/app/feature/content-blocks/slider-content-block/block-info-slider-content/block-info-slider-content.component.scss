@@ -87,3 +87,33 @@ p {
 .in-focus:host {
   z-index: 1;
 }
+
+@media (max-width: 650px) {
+  .block-info-container {
+    --image-container-rotation: 0deg;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .bullet-points-container {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .image-container {
+    transform: translateX(0%);
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  img {
+    width: 8rem;
+    margin: 1rem 0;
+  }
+
+  .right-button {
+    background-color: var(--primary-color);
+  }
+}

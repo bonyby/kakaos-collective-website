@@ -49,3 +49,22 @@
 .right-button:hover {
   background-color: var(--right-button-hover-color, var(--secondary-color));
 }
+
+// not the best solution, I know, but under time pressure and way too late in the evening to care 😴
+@media (max-width: 650px) {
+  .left-button {
+    background-color: var(--primary-color);
+  }
+
+  .left-button:hover {
+    background-color: var(--secondary-color);
+  }
+
+  .right-button {
+    background-color: var(--primary-color);
+  }
+
+  .right-button:hover {
+    background-color: var(--secondary-color);
+  }
+}

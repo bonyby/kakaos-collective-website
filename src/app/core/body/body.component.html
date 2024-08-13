@@ -10,6 +10,7 @@
   />
 
   <app-slider-content-block
+    Title="Meet the blocks!"
     [style.--right-button-color]="'var(--background-color)'"
   >
     <app-block-info-slider-content
@@ -19,16 +20,34 @@
       ImageName="orange-block.png"
     ></app-block-info-slider-content>
     <app-block-info-slider-content
+      BlockName="Red"
+      Health="3"
+      Effect="+25 points & spawns at a new position next round"
+      ImageName="red-block.png"
+    ></app-block-info-slider-content>
+    <app-block-info-slider-content
       BlockName="Purple"
       Health="∞"
       Effect="+1 to round multiplier every 2 hits"
-      ImageName="orange-block.png"
+      ImageName="purple-block.png"
     ></app-block-info-slider-content>
     <app-block-info-slider-content
       BlockName="Yellow"
       Health="3"
       Effect="Gives +1 ball for the rest of the level"
-      ImageName="orange-block.png"
+      ImageName="yellow-block.png"
+    ></app-block-info-slider-content>
+    <app-block-info-slider-content
+      BlockName="Dark Orange"
+      Health="1"
+      Effect="+3 points & spawns 3 new dark orange blocks"
+      ImageName="dark-orange-block.png"
+    ></app-block-info-slider-content>
+    <app-block-info-slider-content
+      BlockName="Blue"
+      Health="2"
+      Effect="+0.25 round multiplier & spawns 2 new blue blocks"
+      ImageName="blue-block.png"
     ></app-block-info-slider-content>
   </app-slider-content-block>
 </div>

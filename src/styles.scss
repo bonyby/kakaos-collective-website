@@ -21,6 +21,8 @@ p {
 }
 
 .content-block {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 600px;
   border-style: solid;
@@ -28,10 +30,19 @@ p {
   border-width: 2px;
   border-radius: 1.5rem;
   margin: 1.5rem;
+  overflow: hidden;
 }
 
 .content-block p {
   margin: 1.5rem;
+}
+
+.content-title {
+  font-weight: 200;
+  font-size: 1.6rem;
+  background-color: var(--primary-color);
+  margin: 0 !important;
+  padding: 0.5rem 0rem 0.5rem 1rem;
 }
 
 .slider-content-container {

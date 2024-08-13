@@ -1,5 +1,8 @@
-<div class="slider-button left-button" (click)="previous()"></div>
-<div class="slider">
-  <ng-content></ng-content>
+<p class="content-title">{{ Title }}</p>
+<div class="slider-container">
+  <div class="slider-button left-button" (click)="previous()"></div>
+  <div class="slider">
+    <ng-content></ng-content>
+  </div>
+  <div class="slider-button right-button" (click)="next()"></div>
 </div>
-<div class="slider-button right-button" (click)="next()"></div>

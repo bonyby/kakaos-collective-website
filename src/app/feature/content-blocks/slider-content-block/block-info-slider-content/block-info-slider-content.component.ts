@@ -22,7 +22,8 @@ export class BlockInfoSliderContentComponent extends SliderContentBaseComponent 
   @Input() ImageName: string = '';
 
   get Hits() {
-    return `Takes ${this.Health} hits!`;
+    let health = parseInt(this.Health);
+    return `Takes ${this.Health} ${health == 1 ? 'hit' : 'hits'}`;
   }
 
   get ImageUrl() {

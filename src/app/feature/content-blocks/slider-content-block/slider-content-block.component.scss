@@ -1,9 +1,17 @@
 .content-block:host {
+  position: relative;
+}
+
+.content-title {
+  z-index: 5;
+}
+
+.slider-container {
   display: flex;
   position: relative;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
 }
 
 .slider {

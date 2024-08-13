@@ -1,5 +1,14 @@
 <div class="block-info-container">
-  <p>this is a very cool block that does very cool things</p>
+  <div class="bullet-points-container">
+    <div class="bullet-point">
+      <app-icon class="icon" IconSrc="assets/icons/health.svg"></app-icon>
+      <p>{{ Hits }}</p>
+    </div>
+    <div class="bullet-point">
+      <app-icon class="icon" IconSrc="assets/icons/effect.svg"></app-icon>
+      <p>{{ Effect }}</p>
+    </div>
+  </div>
   <div class="image-container">
     <img
       src="{{ ImageUrl }}"

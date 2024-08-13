@@ -1,48 +1,80 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(calc(var(--neutral-rotation))) scaleY(1) scaleX(1);
+  }
+  25% {
+    transform: rotate(calc(var(--neutral-rotation) + var(--max-rotation)))
+      scaleY(var(--max-y-scale)) scaleX(var(--min-x-scale));
+  }
+  50% {
+    transform: rotate(calc(var(--neutral-rotation))) scaleY(1) scaleX(1);
+  }
+  75% {
+    transform: rotate(calc(var(--neutral-rotation) - var(--max-rotation)))
+      scaleY(var(--max-y-scale)) scaleX(var(--min-x-scale));
+  }
+  100% {
+    transform: rotate(calc(var(--neutral-rotation))) scaleY(1) scaleX(1);
+  }
+}
+
 .block-info-container {
+  --image-container-rotation: 5deg;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 20rem;
   width: 100%;
   background-color: var(--background-color);
 }
 
+.bullet-points-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+}
+
+.bullet-point {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 4rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.bullet-point p {
+  margin: 0 1.5rem 0 1.5rem;
+  width: 100%;
+}
+
+.icon {
+  min-width: 2.5rem;
+  aspect-ratio: 1/1;
+  --max-y-scale: 1.04;
+  --min-x-scale: 0.94;
+  --neutral-rotation: 0deg;
+  --max-rotation: 2deg;
+  animation: rotate 1.3s infinite linear;
+}
+
 .image-container {
-  --image-container-rotation: 5deg;
   display: flex;
   justify-content: left;
   align-items: center;
   background-color: var(--primary-color);
   padding-left: 2rem;
   height: 120%;
-  width: 30rem;
-  transform: rotate(var(--image-container-rotation)) translateX(25%);
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(calc(0deg - var(--image-container-rotation))) scaleY(1)
-      scaleX(1);
-  }
-  25% {
-    transform: rotate(calc(0deg - var(--image-container-rotation) + 1deg))
-      scaleY(1.02) scaleX(0.985);
-  }
-  50% {
-    transform: rotate(calc(0deg - var(--image-container-rotation))) scaleY(1)
-      scaleX(1);
-  }
-  75% {
-    transform: rotate(calc(0deg - var(--image-container-rotation) - 1deg))
-      scaleY(1.02) scaleX(0.985);
-  }
-  100% {
-    transform: rotate(calc(0deg - var(--image-container-rotation))) scaleY(1)
-      scaleX(1);
-  }
+  width: 40%;
+  transform: rotate(var(--image-container-rotation)) translateX(8%);
 }
 
 img {
+  --max-y-scale: 1.02;
+  --min-x-scale: 0.985;
+  --neutral-rotation: 0deg - var(--image-container-rotation);
+  --max-rotation: 1deg;
   width: 10rem;
   animation: rotate 1.3s infinite linear;
   filter: drop-shadow(-6px 8px rgba(0, 0, 0, 0.3));

@@ -6,7 +6,7 @@
 
   <app-media-content-block
     class="large-content-block"
-    Title="Embrace satisfying chaos in <i>Breakout Season</i>!"
+    Title="Embrace satisfying chaos in <i>Breakout Season!</i>"
     Src="assets/gifs/gameplay-01.gif"
     Alt="A .gif showing gameplay of Breakout Season"
     LoadWidth="850"
@@ -14,6 +14,7 @@
   />
 
   <app-info-content-block
+    class="no-margin"
     Text="<i>Want to follow along on our journey to get <b>behind-the-scenes</b> insights and a chance to have an impact on our games while chatting directly with us? Then:</i>"
   />
 
@@ -24,14 +25,21 @@
 
   <app-heading Title="Breakout Season" />
   <app-info-content-block
-    class="bordered rounded"
-    Text="Fusce porta, tortor a vestibulum facilisis, ipsum eros ultrices purus, id dictum velit magna dapibus magna. Sed ex quam, rhoncus vel tempus nec, lobortis convallis massa. Aenean et consectetur est. Nulla id pretium ipsum. Ut vulputate, ligula at posuere ultricies, velit augue volutpat ligula, eget mollis purus ante et arcu. Cras viverra justo nec nisi tincidunt, at fermentum risus malesuada. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
-  />
+    class="bordered rounded centered-text"
+    Text="Breakout Season is the joyful combination of ball-bouncing and exponential growth. Choose where to shoot your ever-increasing arsenal of balls and embrace the chaos as blocks break with a satisfying <i><b>*pop*</b></i>, balls scatter in every direction and your points soar to the skies! <br/><br/> You can play the newest demo of Breakout Season for <i><b>FREE</b></i> right now in your <i>browser</i> or on your <i>phone</i> or <i>tablet!</i>"
+  >
+    <app-cta-button
+      Text="Play Breakout Season!"
+      Url="https://kakaos-collective.itch.io/breakout-season"
+    ></app-cta-button>
 
-  <app-cta-button
-    Text="Play Breakout Season!"
-    Url="https://kakaos-collective.itch.io/breakout-season"
-  ></app-cta-button>
+    <br />
+  </app-info-content-block>
+
+  <app-info-content-block
+    class="centered-text no-margin"
+    Text="Breakout Season features a host of different blocks all providing various effects from increasing your point multiplier to giving you extra balls to wreck more havoc. Stay tuned as more blocks will arrive in the future!"
+  ></app-info-content-block>
 
   <app-slider-content-block
     class="bordered rounded"
@@ -76,9 +84,14 @@
     ></app-block-info-slider-content>
   </app-slider-content-block>
 
+  <app-info-content-block
+    class="centered-text no-margin"
+    Text="Experience all four seasons of the year during your run, with each season presenting a bigger challenge than the last and a greater opportunity to beat your highscore!"
+  ></app-info-content-block>
+
   <app-slider-content-block
     class="rounded large-content-block"
-    Title="Experience different seasons!"
+    Title="Enjoy the four seasons!"
   >
     <app-image-slider-content
       Src="assets/gameplay-spring.png"

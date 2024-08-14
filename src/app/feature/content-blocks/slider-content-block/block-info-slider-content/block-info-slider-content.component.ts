@@ -1,3 +1,4 @@
+import { NgOptimizedImage } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { IconComponent } from '../../../../shared/images/icon/icon.component';
 import { SliderContentBaseComponent } from '../slider-content-base/slider-content-base.component';
@@ -5,7 +6,7 @@ import { SliderContentBaseComponent } from '../slider-content-base/slider-conten
 @Component({
   selector: 'app-block-info-slider-content',
   standalone: true,
-  imports: [IconComponent],
+  imports: [IconComponent, NgOptimizedImage],
   templateUrl: './block-info-slider-content.component.html',
   styleUrl: './block-info-slider-content.component.scss',
   providers: [

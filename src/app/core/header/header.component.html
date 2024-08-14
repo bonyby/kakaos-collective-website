@@ -3,14 +3,19 @@
     KAKAOS COLLECTIVE
   </h1>
   <img
-    src="assets/scrollAnimation.gif"
-    style="position: absolute; top: 78%; z-index: 1"
+    class="scroll-img"
+    ngSrc="assets/scrollAnimation.gif"
+    width="300"
+    height="300"
+    priority
   />
   <img
     class="banner"
-    src="assets/banner.png"
+    ngSrc="assets/banner.png"
     alt="Banner photo showcasing Breakout Season"
     [style.filter]="BannerBrightness"
     [style.opacity]="BannerOpacity"
+    priority
+    fill
   />
 </div>

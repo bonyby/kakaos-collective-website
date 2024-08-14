@@ -1,10 +1,11 @@
+import { NgOptimizedImage } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import NumberInterpolator from '../../shared/math/number-interpolator';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })

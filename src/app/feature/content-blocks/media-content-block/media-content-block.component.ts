@@ -1,10 +1,11 @@
+import { NgOptimizedImage } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { ContentBlockBaseComponent } from '../content-block-base/content-block-base.component';
 
 @Component({
   selector: 'app-media-content-block',
   standalone: true,
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './media-content-block.component.html',
   styleUrl: './media-content-block.component.scss',
   host: { class: 'rounded' },
@@ -12,4 +13,6 @@ import { ContentBlockBaseComponent } from '../content-block-base/content-block-b
 export class MediaContentBlockComponent extends ContentBlockBaseComponent {
   @Input() Src: string = '';
   @Input() Alt: string = '';
+  @Input() LoadWidth: string = '50';
+  @Input() LoadHeight: string = '50';
 }

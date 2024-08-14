@@ -56,6 +56,7 @@ img {
   --neutral-rotation: 0deg - var(--image-container-rotation);
   --max-rotation: 1deg;
   width: 10rem;
+  height: auto;
   animation: var(--wiggle-animation);
   filter: var(--drop-shadow);
 }
@@ -68,7 +69,7 @@ p {
   z-index: 1;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 640px) {
   .block-info-container {
     --image-container-rotation: 0deg;
     display: flex;

@@ -7,7 +7,6 @@ import { ContentBlockBaseComponent } from '../content-block-base/content-block-b
   imports: [],
   templateUrl: './info-content-block.component.html',
   styleUrl: './info-content-block.component.scss',
-  host: { class: 'bordered rounded' },
 })
 export class InfoContentBlockComponent extends ContentBlockBaseComponent {
   @Input() Text: string = 'Text';

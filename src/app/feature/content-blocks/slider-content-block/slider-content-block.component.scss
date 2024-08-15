@@ -38,7 +38,7 @@
 }
 
 .left-button:hover {
-  background-color: var(--left-button-hover-color, var(--secondary-color));
+  background-color: var(--left-button-hover-color, var(--text-color));
 }
 
 .right-button {
@@ -47,7 +47,7 @@
 }
 
 .right-button:hover {
-  background-color: var(--right-button-hover-color, var(--secondary-color));
+  background-color: var(--right-button-hover-color, var(--text-color));
 }
 
 // not the best solution, I know, but under time pressure and way too late in the evening to care 😴

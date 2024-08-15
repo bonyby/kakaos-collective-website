@@ -1,7 +1,12 @@
 <div class="headerContainer">
-  <h1 [style.top]="TitleTop" [style.opacity]="TitleOpacity">
-    KAKAOS COLLECTIVE
-  </h1>
+  <div
+    class="logo-container"
+    [style.top]="TitleTop"
+    [style.opacity]="TitleOpacity"
+  >
+    <div class="logo-image"></div>
+    <div class="logo-title"></div>
+  </div>
   <img
     class="scroll-img"
     ngSrc="assets/scrollAnimation.gif"
@@ -9,7 +14,7 @@
     height="300"
     priority
   />
-  <img
+  <!-- <img
     class="banner"
     ngSrc="assets/banner.png"
     alt="Banner photo showcasing Breakout Season"
@@ -17,5 +22,10 @@
     [style.opacity]="BannerOpacity"
     priority
     fill
-  />
+  /> -->
+  <div
+    class="banner"
+    [style.filter]="BannerBrightness"
+    [style.opacity]="BannerOpacity"
+  ></div>
 </div>

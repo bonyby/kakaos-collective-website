@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap");
 
 :root {
-  --text-color: #f9e4d4;
-  --background-color: #470d21;
-  --primary-color: #9c0f48;
-  --secondary-color: #d67d3e;
-  --accent-color-1: #508d4e;
-  --accent-color-2: #d67d3e;
+  --text-color: #f9e4cb;
+  --logo-color: #efcea9;
+  --background-color: #34241c;
+  --primary-color: #eb672d;
+  --secondary-color: #f79a58;
+  --tertiary-color: #c85828;
+  --accent-color-1: #4d7b2f;
+  --accent-color-2: #3e53a1;
+
+  // --text-color: #f9e4d4;
+  // --background-color: #470d21;
+  // --primary-color: #9c0f48;
+  // --secondary-color: #d67d3e;
+  // --accent-color-1: #508d4e;
+  // --accent-color-2: #d67d3e;
 
   --drop-shadow: drop-shadow(-6px 8px rgba(0, 0, 0, 0.3));
 }
@@ -55,7 +64,7 @@ a {
 }
 
 .content-title {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.2rem;
   background-color: var(--primary-color);
   margin: 0 !important;

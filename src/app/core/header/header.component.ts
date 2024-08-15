@@ -10,7 +10,7 @@ import NumberInterpolator from '../../shared/math/number-interpolator';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  private startBannerBrightness = 35;
+  private startBannerBrightness = 100;
   private endBannerBrightness = 10;
   BannerBrightness = `brightness(${this.startBannerBrightness}%)`;
 

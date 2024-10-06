@@ -2,11 +2,11 @@
 
 :root {
   --text-color: #f9e4cb;
-  --logo-color: #fae5cd;
+  --logo-color: #FFFFFF;
   --background-color: #34241c;
   --primary-color: #eb672d;
   --secondary-color: #f79a58;
-  --tertiary-color: #c85828;
+  --tertiary-color: #EB672D;
   --accent-color-1: #4d7b2f;
   --accent-color-2: #3e53a1;
 
@@ -61,7 +61,7 @@ a {
   font-size: 1.2rem;
   background-color: var(--primary-color);
   margin: 0 !important;
-  padding: 0.25rem 0rem 0.25rem 1rem;
+  padding: 0.25rem 0rem 0.25rem 1.5rem;
   color: var(--text-color);
 }
 

@@ -34,7 +34,7 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  left: 50%;
+  left: 46%;
   transform: translate(-50%, -50%);
   color: var(--text-color);
   margin: 0;
@@ -70,6 +70,9 @@
   .logo-title {
     width: 55vw;
     height: 20vh;
+  }
+  .logo-container {
+    left: 50%;
   }
 }
 
